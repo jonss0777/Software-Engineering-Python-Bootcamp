@@ -1,7 +1,7 @@
 # contains functional & non-functional unit tests for the previous method
 from is_prime import is_prime
 
-
+# 
 def test_true():
     assert is_prime(3) == True
 
