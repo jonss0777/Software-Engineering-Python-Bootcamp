@@ -14,7 +14,6 @@ class WeatherApplication:
     def getTemperature(self):
         return self.data[0]
 
-
     def getCity(self):
         return self.city
 

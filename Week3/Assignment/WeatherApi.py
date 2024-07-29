@@ -5,7 +5,7 @@ import pandas as pd
 
 from retry_requests import retry
 
-def getData(city):
+def getWeatherData(coordinates):
     
     # Setup the Open-Meteo API client with cache and retry on error 
     cache_session = requests_cache.CachedSession('.cache', expire_after = 3600)
@@ -16,10 +16,10 @@ def getData(city):
     # The order of variables in hourly or daily is important to assign them correctly below
     url = "https://api.open-meteo.com/v1/forecast"
     params = {
-	"latitude": 40.7143,
-	"longitude": -74.006,
+	"latitude": coordinates["lat"],
+	"longitude": coordinates["lng"],
 	"hourly": ["temperature_2m", "relative_humidity_2m"],
-    "timezone": "America/New_York",
+    "temperature_unit": "fahrenheit",
 	"forecast_days": 1
     }
 
