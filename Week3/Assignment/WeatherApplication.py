@@ -1,18 +1,17 @@
 
-from WeatherApi import getData
 class WeatherApplication:
 
     def __init__(self):
         self.data = [] # instance variable unique to each instance
-        self.humidity = ""
-        self.city = ""
-        self.temperature = ""
+        self.humidity = None
+        self.city = None
+        self.temperature = None
 
     def fetchData(self,city):
-        self.data = getData(city)
+        pass
 
     def getTemperature(self):
-        return self.data[0]
+        return self.data
 
     def getCity(self):
         return self.city
@@ -21,7 +20,7 @@ class WeatherApplication:
         self.city = city
 
     def getHumidity(self):
-        return self.data[1]
+        return self.data
     
 
 
