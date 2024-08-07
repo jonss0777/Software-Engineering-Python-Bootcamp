@@ -13,3 +13,15 @@ git push
 
 ```
 
+PyTest
+
+Its a framework to test your functions
+
+@heemonsu
+
+functional 
+
+non functional tests 
+
+
+
