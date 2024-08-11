@@ -1,9 +1,5 @@
-import http.client
 import urllib.parse
-import json
-import asyncio 
 import aiohttp 
-
 
 from dotenv import load_dotenv
 import os
@@ -38,7 +34,7 @@ async def location(address, zipcode, city, country):
                     # lat: FLOAT
                     # lgn: FLOAT
                     #}
-                    
+
                     return json_response["results"][0]["geometry"]["location"]
                 
                 else:

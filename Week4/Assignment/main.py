@@ -32,9 +32,9 @@ async def main():
     plt.plot(xtime, ytemp, label="temperature")
     plt.plot(xtime, yhumid, label="humidity")  
 
-    plt.xlabel('x label')
-    plt.ylabel('y label')
-    plt.title("Weather Info")
+    plt.xlabel('X')
+    plt.ylabel('Y')
+    plt.title(f"{city} {country} Weather Info")
     plt.legend()
     plt.show()
 

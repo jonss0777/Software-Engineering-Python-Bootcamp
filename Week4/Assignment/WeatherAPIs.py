@@ -84,9 +84,6 @@ class OpenMeteoWeatherAPI(AbstractWeatherAPI):
 
                     else:
                         print("There was an error while fetching data from the open api")
-                       
-                       
-
         except Exception as e:
             print(f"Unexpected error: {e}")
            
