@@ -30,7 +30,7 @@ Flask
 React 
 Frontend
 
-![Medicode Website draft](\SoftwareEnginneringBootcamp\Project Draft.jpg)
+![Medicode Website draft](\Project Draft.jpg)
 
 
 ### Planning
